@@ -81,11 +81,11 @@ function FirstRow() {
     const getColor = (title, value) => {
       switch(title) {
         case 'AVAILABILITY':
-          return value >= 90 ? '#E97451' : '#FDB347';
+          return value <= 90 ? '#E97451' : '#E97451';
         case 'PERFORMANCE':
-          return value >= 75 ? '#E97451' : '#FDB347';
+          return value >= 75 ? '#E97451' : '##E97451';
         case 'QUALITY':
-          return value >= 70 ? '#E97451' : '#FDB347';
+          return value >= 70 ? '#E97451' : '#E97451';
         default:
           return '#E97451';
       }
@@ -237,7 +237,7 @@ function FirstRow() {
             <div className="w-full border border-gray-200 rounded-lg shadow-sm">
               <MetricCard 
                 title="AVAILABILITY"
-                value="95"
+                value="15"
                 trend="(+10% ▲)"
                 prevValue="vs prev 11.6K"
               />
